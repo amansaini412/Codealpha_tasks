@@ -1,19 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Real-Time Chat App</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz - App</title>
+  <!-- Poppins Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <!-- External CSS -->
   <link rel="stylesheet" href="style.css" />
-</head>
+</head>   
 <body>
-  <div class="chat-container">
-    <h2>iChat </h2>
-    <ul id="messages"></ul>
-    <form id="form">
-      <input id="input" autocomplete="off" placeholder="Type message..." />
-      <button>Send</button>
-    </form>
+  <div class="app">
+    <h1>Simple Quiz</h1>
+    <div class="quiz">
+      <h2 id="question">Question goes here</h2>
+      <div id="answer-buttons">
+        <!-- Dynamic buttons inserted by JS -->
+      </div>
+      <button id="next-btn">Next</button>
+    </div>
   </div>
-  <script src="/socket.io/socket.io.js"></script>
-  <script src="client.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
